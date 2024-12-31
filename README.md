@@ -9,7 +9,7 @@ an NMS solution for mikrotik devices that seeks to bypass the limitations that e
 
 
 ## What is our objective? 
-Avoid needing to have a public IP or using VPN tunnels to manage your devices through the API service as you would normally do; Instead, we decided to create a solution based 100% on using the search tool and router scheduler.
+Avoid needing to have a public IP or using VPN tunnels to manage your devices through the API service as you would normally do; Instead, we decided to create a solution based 100% on using the search tool and scheduler.
 
 
 ## What functionalities will MNMS have?
