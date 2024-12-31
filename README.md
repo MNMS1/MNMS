@@ -2,7 +2,7 @@
 
 ## What is this ? 
 an NMS solution for mikrotik devices that seeks to bypass the limitations that exist when managing mikrotik devices at scale.
-![image](https://drive.google.com/u/0/drive-viewer/AKGpihaCASPntQj7n4JW0dVGrAtjaWqVTRQOjqsL-dyhS9qqYiTzRhS_PB5FIgMvMXjIGNbtnjlkfod-Ro1DjvZH89yrOqiBWpdrVaY=s1600-rw-v1)
+[![image](https://photos.google.com/share/AF1QipObF6Se5cFNPUiVfp94m-8TcOFXt0ZjVhLzqtF8HG1mw1SfaAJcBULbd8wBYgrrDg/photo/AF1QipMsPklZTtCXoGkXZXy-fcPSHC-SpNr6JInDjGdO?key=SFY4LTJNU2VkdmQzSm94M1BHaFpmNmdpYjcyUHFn)
 
 
 ## What is our objective? 
