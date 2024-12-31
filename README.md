@@ -23,3 +23,5 @@ Avoid needing to have a public IP or using VPN tunnels to manage your devices th
 When will the release date be?
 
 very soon in 2025 we will publish the alpha version
+
+For more information join our discord : [Discord](https://discord.gg/dkYNS3Wg)
