@@ -1,5 +1,6 @@
 # Welcome to MNMS 
-![Screenshot](https://github.com/user-attachments/assets/ae28cf36-ed40-4d91-8887-a31df66ce316)
+
+![Screenshot](https://github.com/user-attachments/assets/815f2334-9474-48da-85b4-7c205f155163)
 
 ## What is this ? 
 an NMS solution for mikrotik devices that seeks to bypass the limitations that exist when managing mikrotik devices at scale.
