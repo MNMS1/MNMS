@@ -2,7 +2,7 @@
 
 ## What is this ? 
 an NMS solution for mikrotik devices that seeks to bypass the limitations that exist when managing mikrotik devices at scale.
-![image](https://drive.google.com/u/0/drive-viewer/AKGpihaCASPntQj7n4JW0dVGrAtjaWqVTRQOjqsL-dyhS9qqYiTzRhS_PB5FIgMvMXjIGNbtnjlkfod-Ro1DjvZH89yrOqiBWpdrVaY=s1600-rw-v1)
+![image]([https://drive.google.com/u/0/drive-viewer/AKGpihaCASPntQj7n4JW0dVGrAtjaWqVTRQOjqsL-dyhS9qqYiTzRhS_PB5FIgMvMXjIGNbtnjlkfod-Ro1DjvZH89yrOqiBWpdrVaY=s1600-rw-v1](https://drive.google.com/u/0/drive-viewer/AKGpihaCASPntQj7n4JW0dVGrAtjaWqVTRQOjqsL-dyhS9qqYiTzRhS_PB5FIgMvMXjIGNbtnjlkfod-Ro1DjvZH89yrOqiBWpdrVaY=s1600-rw-v1))
 ## What is our objective? 
 Avoid needing to have a public IP or using VPN tunnels to manage your devices through the API service as you would normally do; Instead, we decided to create a solution based 100% on using the search tool and router scheduler.
 
