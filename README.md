@@ -4,7 +4,7 @@
 an NMS solution for mikrotik devices that seeks to bypass the limitations that exist when managing mikrotik devices at scale.
 
 ## What is our objective? 
-Avoid using VPN tunnels to manage devices through the API service as would normally be done, instead we decided to build a solution based 100% on the use of the fetch tool and the router scheduler.
+Avoid needing to have a public IP or using VPN tunnels to manage your devices through the API service as you would normally do; Instead, we decided to create a solution based 100% on using the search tool and router scheduler.
 
 
 ## What functionalities will MNMS have?
