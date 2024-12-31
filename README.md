@@ -24,4 +24,4 @@ When will the release date be?
 
 very soon in 2025 we will publish the alpha version
 
-For more information join our discord : [Discord](https://discord.gg/dkYNS3Wg)
+For more information join our [Discord](https://discord.gg/dkYNS3Wg)
