@@ -71,15 +71,12 @@ export default function SignIn() {
                 />
                 <Label htmlFor="remember">Remember me</Label>
               </div>
-
-          
-
           <Button
               type="submit"
               className="w-full"
               disabled={loading}
               onClick={async () => {
-                await signIn.email({ email, password });
+                await signIn.email({ email, password ,callbackURL:"/"});
               }}
             >
               {loading ? (
@@ -88,13 +85,8 @@ export default function SignIn() {
                 "Login"
               )}
             </Button>
-              
-          
-
-          
         </div>
       </CardContent>
-      
     </Card>
   );
 }
