@@ -18,7 +18,7 @@ import { signUp } from "@/lib/auth-client";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 
-export default function SignUp() {
+export function SignUp() {
 	const [firstName, setFirstName] = useState("");
 	const [lastName, setLastName] = useState("");
 	const [email, setEmail] = useState("");
@@ -42,7 +42,7 @@ export default function SignUp() {
 	};
 
 	return (
-		<Card className="z-50 rounded-md rounded-t-none max-w-lg border-none shadow-none">
+		<Card className="z-50 rounded-md rounded-t-none max-w-md">
 			<CardHeader>
 				<CardTitle className="text-lg md:text-xl">Sign Up</CardTitle>
 				<CardDescription className="text-xs md:text-sm">
@@ -156,7 +156,7 @@ export default function SignUp() {
 								name: `${firstName} ${lastName}`,
 								image: image ? await convertImageToBase64(image) : "",
 								callbackURL: "/dashboard",
-								fetchOptions: {
+                                fetchOptions: {
 									onResponse: () => {
 										setLoading(false);
 									},
@@ -181,6 +181,7 @@ export default function SignUp() {
 					</Button>
 				</div>
 			</CardContent>
+
 		</Card>
 	);
 }
