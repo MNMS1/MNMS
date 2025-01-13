@@ -1,42 +1,32 @@
-"use client"
 import SignIn from "../_components/sign-in"
-import SignUp from "../_components/sign-up"
+import { auth } from "@/lib/auth";
+import { headers } from "next/headers";
+import { redirect } from "next/navigation";
+import { db } from "@/db";
 
-import { useState } from "react";
+export default async function LoginPage() {
 
+    const [session,user] = await Promise.all([
+        auth.api.getSession({
+            headers: await headers(),
+        }),
+        db.query.user.findFirst()
+    ])
 
-export default function LoginPage() {
-  const [singup, setSingUp] = useState(false);
-
+    if (session){
+        throw redirect("/")
+    }
+    
+    if (!user){
+        throw redirect("/onboarding")
+    }
   return (
     <div className="grid min-h-svh lg:grid-cols-2">
       <div className="flex flex-col gap-4 p-6 md:p-10">
         <div className="flex flex-1 items-center justify-center">
           <div className="w-full max-w-sm " >
-            {singup?
-            <>
-              <SignUp/>
-              <div className="text-center text-sm">
-                Do&apos; you already have an account?{" "}
-                <a href="#" onClick={()=>{setSingUp(false)}} className="underline underline-offset-4">
-                  Sign In
-                </a>
-              </div>
-            </>
-            :
-              <>
               <SignIn/>
-              <div className="text-center text-sm">
-                Don&apos;t have an account?{" "}
-                <a href="#" onClick={()=>{setSingUp(true)}} className="underline underline-offset-4">
-                  Sign Up
-                </a>
-              </div>
-            </>
-            }
-
           </div>
-          
         </div>
       </div>
       <div className="relative hidden bg-muted lg:block">
