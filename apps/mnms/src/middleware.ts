@@ -1,7 +1,7 @@
 import { betterFetch } from "@better-fetch/fetch";
 import type { auth } from "@/lib/auth";
 import { NextResponse, type NextRequest } from "next/server";
- 
+import { db } from "@/db";
 type Session = typeof auth.$Infer.Session;
  
 export default async function authMiddleware(request: NextRequest) {
@@ -15,8 +15,14 @@ export default async function authMiddleware(request: NextRequest) {
 			},
 		},
 	);
- 
+
 	if (!session) {
+		const user = await db.query.user.findFirst()
+		if (!user){
+			return NextResponse.redirect(new URL("/onboarding", request.url));
+
+		}
+
 		return NextResponse.redirect(new URL("/login", request.url));
 	}
 	return NextResponse.next();
@@ -24,5 +30,5 @@ export default async function authMiddleware(request: NextRequest) {
  
 
 export const config = {
-	matcher: ['/((?!api|_next/static|_next/image|favicon.ico|login|placeholder.webp).*)'],
+	matcher: ['/((?!api|onboarding|login|_next/static|_next/image|favicon.ico|placeholder.webp).*)'],
 };
