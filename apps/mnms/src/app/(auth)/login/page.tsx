@@ -6,20 +6,6 @@ import { db } from "@/db";
 
 export default async function LoginPage() {
 
-    const [session,user] = await Promise.all([
-        auth.api.getSession({
-            headers: await headers(),
-        }),
-        db.query.user.findFirst()
-    ])
-
-    if (session){
-        throw redirect("/")
-    }
-    
-    if (!user){
-        throw redirect("/onboarding")
-    }
   return (
     <div className="grid min-h-svh lg:grid-cols-2">
       <div className="flex flex-col gap-4 p-6 md:p-10">
